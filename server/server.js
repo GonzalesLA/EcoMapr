@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
+const { listeners } = require('process');
 
 const app = express();
 const PORT = 5000;
@@ -131,5 +132,5 @@ app.put('/favorites/edit', (req, res) => {
 
 // Start Server
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
