@@ -2,10 +2,10 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
-const { listeners } = require('process');
 
 const app = express();
 const PORT = 5000;
+const HOST = 'localhost';
 
 app.use(cors());
 app.use(express.json());
@@ -108,7 +108,7 @@ app.delete('/favorites', (req, res) => {
     }
 });
 
-// Edit favorite
+// Edit Favorite
 app.put('/favorites/edit', (req, res) => {
     const { username, oldFavorite, newFavorite } = req.body;
 
@@ -131,6 +131,6 @@ app.put('/favorites/edit', (req, res) => {
 });
 
 // Start Server
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+app.listen(PORT, HOST, () => {
+    console.log(`✅ Server running at http://${HOST}:${PORT}`);
 });
