@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Jumeirah Beach", coords: [25.2048, 55.2489] },
         { name: "Mall of Emirates", coords: [25.1180, 55.2003] },
         { name: "Wild Wadi Waterpark", coords: [25.1411, 55.1888] },
-        { name: "IMG Wolds of Adventure", coords: [25.0700, 55.3012] },
+        { name: "IMG World of Adventure", coords: [25.0700, 55.3012] },
         { name: "Al Fahidi Historical District", coords: [25.2639, 55.2978] },
         { name: "Dubai Butterfly Garden", coords: [25.0930, 55.1746] }
     ];
